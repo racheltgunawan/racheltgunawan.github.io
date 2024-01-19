@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class = "theme1 formatScreen">
+    <h3 id = "intro" class="fade-in">Hi, my name is...</h3>
+    <h1 class="fade-in">Rachel Gunawan</h1> 
+    <p class="fade-in">Welcome to my portfolio</p>
+
+    <a class="button theme2 fade-in" href="#projects">See projects</a>
+    
+  </div>
+
+  <div class="theme2 formatScreen">
+    <div class="container">
+      <div class="left">
+        <img src="Rachy 1 copy.jpg" class="profile fade">
+      </div>
+      <div class = "right">
+        <p class = "description fade-in">I am an aspiring Software Developer hoping to pursue a career in Med/Tech, and a second year computer science student. I am grealy interested in Machine Learning, and would love to apply this interest to an internship.</p>
+        <p class = "description fade-in">I started programming in high school, and grew my love for coding by joining my school's chapter of the FIRST Robotics Competitions. Previously, I worked at a start-up where I performed data-cleansing and web-scraping. I now work at my school's Computer Science department as a tutor and my school's IT department as an IT Support Technician.</p>
+        <p class="description fade-in">Skills:</p>
+        <div class="skills container fade-in">
+          <img src="cpp.png">
+          <img src="https://www.shareicon.net/data/2015/06/26/59989_java_256x256.png">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968286.png">
+          <img src="https://friconix.com/jpg/fi-stluxx-jupyter-notebook.jpg">
+          <img src="https://seeklogo.com/images/H/html5-without-wordmark-black-white-logo-104D0855A4-seeklogo.com.png">
+          <img src="https://p.kindpng.com/picc/s/198-1985018_css-css-logo-website-css-logo-transparent-background.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="theme1 formatScreen" id="projects">
+    <h2 class = "fade">Project highlights</h1>
+    <div class="slides">
+      <div class="container">
+        <div class="sleft">
+          <h2 class = "fade-in">Credit Card Default Prediction</h2>
+          <p class = "fade-in">Machine learning model to predict whether a user will predict their next credit card payment. Emphasizes data analysis and interpretation.</p>
+        </div>
+        <div class = "sright">
+          <img src="pic1.png" class="sImage fade">
+        </div>
+      </div>
+      <div class="container">
+        <div class="sleft">
+          <h2 class = "fade-in">COVID Care</h2>
+          <p class = "fade-in">An iOS application that provides resources for educating users about COVID-19 and assists them in locating valuable resources including a nearby testing site function.</p>
+        </div>
+        <div class = "sright">
+          <img src="pic3.GIF" class="sGIF fade">
+        </div>
+      </div>
+      <div class="container">
+        <div class="sleft">
+          <h2 class = "fade-in">Tweet Classifier</h2>
+          <p class = "fade-in">Classifies tweets into hate or neutral tweets using a CountVectorizer preprocessor and sklearn’s LogisticRegression ML model.</p>
+        </div>
+        <div class = "sright">
+          <img src="pic2.png" class="sImage fade">
+        </div>
+      </div>
+    </div>
+    <div class="container fade">
+        <div class="project">
+          <h3 class="pTitle">COVID Care</h3>
+          <p class="pDescription">An iOS application aimed at educating users about COVID-19 and assisting them in locating valuable resources, including articles, and nearby testing sites using XCode’s UI element MapKit.</p>
+          <p class="pDescription">Tools/concepts: Xcode, Swift, iOS application development, front-end development</p>
+          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/COVID-Care">Link to Github</a>
+        </div>
+        <div class="project">
+          <h3 class="pTitle">Tweet Classifier</h3>
+          <p class="pDescription">Classifies tweets into hate or neutral tweets using a CountVectorizer preprocessor and sklearn’s LogisticRegression ML model. Achieved a 97% accuracy in tweet classification</p>
+          <p class="pDescription">Tools/concepts: Jupyter Notebook, Python (pandas, sklearn), Machine learning, Natural Language Processing</p>
+          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Tweet-Classifier">Link to Github</a>
+        </div>
+        <div class="project">
+          <h3 class="pTitle">Credit Card Default Prediction</h3>
+          <p class="pDescription">Predicts if a user will default their next credit card payment based on payment history using various models (e.g., RanndomForest, CatBoost, LogisticRegression). Practices feature engineering, data analysis and interpretation.</p>
+          <p class="pDescription">Tools/concepts: Jupyter Notebook, Python (pandas, scikit-learn), Machine learning, Data Analysis (EDA), Data cleansing, RandomForest, SVM</p>
+          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Credit-Card-Default">Link to Github</a>
+        </div>
+      </div>
+    <div class="container fade">
+      <div class="project">
+        <h3 class="pTitle">Divercity</h3>
+        <p class="pDescription">An iOS app that provides BLM resources related to various cities, allowing users to find local resources to support the movement. Randomly generates black-owned businesses.</p>
+        <p class="pDescription">Tools/concepts: Xcode, Swift, iOS application development, front-end development</p>
+        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Divercity---KWK-group-project">Link to Github</a>
+      </div>
+      <div class="project">
+        <h3 class="pTitle">Swerve code--FIRST Robotics</h3>
+        <p class="pDescription">Programmed the swerve drive of my school's robotics team, and created an autonomous snap rotate function to turn the robot to the nearest 45 degree angle.</p>
+        <p class="pDescription">Tools/concepts: Java, Robotics, Object-oriented programming, Embedded systems</p>
+        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/swerve">Link to Github</a>
+      </div>
+      <div class="project">
+        <h3 class="pTitle">Expression Evaluator</h3>
+        <p class="pDescription">Calculator for algebraic expressions (/, *, +, -, %) with consideration of PEMDAS and the unary minus.</p>
+        <p class="pDescription">Tools/concepts: C++, File input/output, Pointers, Object-oriented programming</p>
+        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Expression-evaluator/blob/main/lab1-racheltgunawan/evaluator.cpp">Link to Github</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
