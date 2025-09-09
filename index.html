@@ -1,119 +1,282 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <script src="script.js"></script>
-  <div class = "theme1 formatScreen">
-    <h3 id = "intro" class="fade-in">Hi, my name is...</h3>
-    <h1 class="fade-in">Rachel Gunawan</h1> 
-    <p class="fade-in">Welcome to my portfolio</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <a class="button theme2 fade-in" href="#projects">See projects</a>
-    
-  </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Your Name</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+                <p class="hero-description">
+                    I create beautiful, functional, and user-centered digital experiences 
+                    that solve real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-  <div class="theme2 formatScreen">
-    <div class="container">
-      <div class="left">
-        <img src="Rachy 1 copy.jpg" class="profile fade">
-      </div>
-      <div class = "right">
-        <p class = "description fade-in">I am an aspiring Software Developer hoping to pursue a career in Med/Tech, and a second year computer science student. I am grealy interested in Machine Learning, and would love to apply this interest to an internship.</p>
-        <p class = "description fade-in">I started programming in high school, and grew my love for coding by joining my school's chapter of the FIRST Robotics Competitions. Previously, I worked at a start-up where I performed data-cleansing and web-scraping. I now work at my school's Computer Science department as a tutor and my school's IT department as an IT Support Technician.</p>
-        <p class="description fade-in">Skills:</p>
-        <div class="skills container fade-in">
-          <img src="cpp.png">
-          <img src="https://www.shareicon.net/data/2015/06/26/59989_java_256x256.png">
-          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968286.png">
-          <img src="https://friconix.com/jpg/fi-stluxx-jupyter-notebook.jpg">
-          <img src="https://seeklogo.com/images/H/html5-without-wordmark-black-white-logo-104D0855A4-seeklogo.com.png">
-          <img src="https://p.kindpng.com/picc/s/198-1985018_css-css-logo-website-css-logo-transparent-background.png">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer with a love for creating innovative solutions 
+                        and beautiful user experiences. With expertise in modern web technologies, 
+                        I bring ideas to life through clean, efficient code.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, 
+                        contributing to open source projects, or enjoying a good cup of coffee 
+                        while planning my next creative project.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="theme1 formatScreen" id="projects">
-    <h2 class = "fade">Project highlights</h1>
-    <div class="slides">
-      <div class="container">
-        <div class="sleft">
-          <h2 class = "fade-in">Credit Card Default Prediction</h2>
-          <p class = "fade-in">Machine learning model to predict whether a user will predict their next credit card payment. Emphasizes data analysis and interpretation.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with React, Node.js, and MongoDB. 
+                            Features include user authentication, payment processing, and admin dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A collaborative task management application with real-time updates, 
+                            drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            A responsive weather application with location-based forecasts, 
+                            interactive maps, and beautiful data visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class = "sright">
-          <img src="pic1.png" class="sImage fade">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to start your next project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="sleft">
-          <h2 class = "fade-in">COVID Care</h2>
-          <p class = "fade-in">An iOS application that provides resources for educating users about COVID-19 and assists them in locating valuable resources including a nearby testing site function.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <p>Built with passion and lots of coffee ☕</p>
+            </div>
         </div>
-        <div class = "sright">
-          <img src="pic3.GIF" class="sGIF fade">
-        </div>
-      </div>
-      <div class="container">
-        <div class="sleft">
-          <h2 class = "fade-in">Tweet Classifier</h2>
-          <p class = "fade-in">Classifies tweets into hate or neutral tweets using a CountVectorizer preprocessor and sklearn’s LogisticRegression ML model.</p>
-        </div>
-        <div class = "sright">
-          <img src="pic2.png" class="sImage fade">
-        </div>
-      </div>
-    </div>
-    <div class="container fade">
-        <div class="project">
-          <h3 class="pTitle">COVID Care</h3>
-          <p class="pDescription">An iOS application aimed at educating users about COVID-19 and assisting them in locating valuable resources, including articles, and nearby testing sites using XCode’s UI element MapKit.</p>
-          <p class="pDescription">Tools/concepts: Xcode, Swift, iOS application development, front-end development</p>
-          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/COVID-Care">Link to Github</a>
-        </div>
-        <div class="project">
-          <h3 class="pTitle">Tweet Classifier</h3>
-          <p class="pDescription">Classifies tweets into hate or neutral tweets using a CountVectorizer preprocessor and sklearn’s LogisticRegression ML model. Achieved a 97% accuracy in tweet classification</p>
-          <p class="pDescription">Tools/concepts: Jupyter Notebook, Python (pandas, sklearn), Machine learning, Natural Language Processing</p>
-          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Tweet-Classifier">Link to Github</a>
-        </div>
-        <div class="project">
-          <h3 class="pTitle">Credit Card Default Prediction</h3>
-          <p class="pDescription">Predicts if a user will default their next credit card payment based on payment history using various models (e.g., RanndomForest, CatBoost, LogisticRegression). Practices feature engineering, data analysis and interpretation.</p>
-          <p class="pDescription">Tools/concepts: Jupyter Notebook, Python (pandas, scikit-learn), Machine learning, Data Analysis (EDA), Data cleansing, RandomForest, SVM</p>
-          <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Credit-Card-Default">Link to Github</a>
-        </div>
-      </div>
-    <div class="container fade">
-      <div class="project">
-        <h3 class="pTitle">Divercity</h3>
-        <p class="pDescription">An iOS app that provides BLM resources related to various cities, allowing users to find local resources to support the movement. Randomly generates black-owned businesses.</p>
-        <p class="pDescription">Tools/concepts: Xcode, Swift, iOS application development, front-end development</p>
-        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Divercity---KWK-group-project">Link to Github</a>
-      </div>
-      <div class="project">
-        <h3 class="pTitle">Swerve code--FIRST Robotics</h3>
-        <p class="pDescription">Programmed the swerve drive of my school's robotics team, and created an autonomous snap rotate function to turn the robot to the nearest 45 degree angle.</p>
-        <p class="pDescription">Tools/concepts: Java, Robotics, Object-oriented programming, Embedded systems</p>
-        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/swerve">Link to Github</a>
-      </div>
-      <div class="project">
-        <h3 class="pTitle">Expression Evaluator</h3>
-        <p class="pDescription">Calculator for algebraic expressions (/, *, +, -, %) with consideration of PEMDAS and the unary minus.</p>
-        <p class="pDescription">Tools/concepts: C++, File input/output, Pointers, Object-oriented programming</p>
-        <a class="button2 theme2 github" href="https://github.com/racheltgunawan/Expression-evaluator/blob/main/lab1-racheltgunawan/evaluator.cpp">Link to Github</a>
-      </div>
-    </div>
-  </div>
-  
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
